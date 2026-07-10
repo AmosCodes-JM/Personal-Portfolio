@@ -11,7 +11,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Gabarito", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 body {
@@ -183,12 +183,56 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   row-gap: 2.4rem;
+  padding: 4rem 1rem 2rem 1rem;
 
-  background-color: gray;
+  background-color: #343A40;
+
+  .contact-info {
+    text-align: center;
+
+    h2 {
+      font-size: 4.5rem;
+      letter-spacing: 3px;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.55rem;
+      text-align: justify;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+
+    label {
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      margin-bottom: 2rem;
+    }
+  }
 
   img { 
         max-width: 30rem;
+  }
+
+ .footer-info {
+
+   h2 {
+     text-align: center;
+     font-size: 2rem;
+   }
+ } 
+  
+  .social-icons {
+    
+    ul {
+      column-gap: 1.5rem;
+    }
   }
 }
