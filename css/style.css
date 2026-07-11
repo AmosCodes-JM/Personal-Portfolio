@@ -284,6 +284,24 @@ footer {
         }
       }
 
+      .form-g4 {
+        display: flex;
+        justify-content: right;
+        padding: 0;
+        border: none;
+
+        padding-bottom: 1rem;
+        
+        button {
+          padding-bottom: 1rem;
+          letter-spacing: 2px;
+          background-color: var(--secondary-bg-color);
+          border: none;
+          border-bottom: solid mediumaquamarine 3px;
+          color: var(--primary-font-color);
+        }
+      }
+
     }
     
 
@@ -293,6 +311,9 @@ footer {
   } 
 
  .footer-info {
+  border-top: var(--primary-white-color) solid 2px;
+  padding-top: 1rem;
+  width: 100%;
 
    h2 {
      text-align: center;
@@ -303,7 +324,12 @@ footer {
   .social-icons {
     
     ul {
-      column-gap: 1.5rem;
+      column-gap: 2.5rem;
+
+      img {
+        background-color: var(--primary-white-color); /* Remove Background if white icons can be found*/
+        border-radius: 50%;
+      }
     }
   }
 }
