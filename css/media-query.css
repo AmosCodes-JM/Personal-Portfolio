@@ -1,0 +1,84 @@
+/* Tablet Layout */
+
+@media screen and (min-width: 700px) {
+    header {
+        display: block;
+        margin: 0 1.8rem;
+        padding: 0;
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    /* Global Styling For Icons */
+    .social-icons {
+        ul {
+            column-gap: 2rem;
+        }
+    }
+
+    main { 
+        .about-us {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: min-content;
+            margin-bottom: 13rem;
+            border-bottom: var(--primary-white-color) solid 2px;
+
+            .main-img-container {
+                justify-self: end;
+                img {
+                    transform: translate(10px,-120px);
+                    grid-column: 2;
+                }
+            }
+
+            div {
+                align-self: end;
+                grid-row: 1;
+                grid-column: 1;
+            }
+        }
+
+        .skills-section {
+            display: grid;
+            margin-top: 3rem;
+        }
+        
+        .project-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+        }
+    }
+
+    footer {
+        padding: 2rem  2.5rem 0;
+        .contact-info {
+            width: 400px;
+            line-height: 3rem;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        
+        .contact-form {
+            width: 400px;
+            padding: 0;
+        }
+        
+        .footer-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+            font-size: 3.8rem;
+
+            .social-icons {
+                ul {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
