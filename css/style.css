@@ -5,10 +5,24 @@
 }
 
 :root {
-  --primary-bg-color: #212529; /* global scope */
-  --secondary-bg-color: #1C1F22; /* 50% Opacity */
-  --secondary-bg-color-opacity-90: #373B3E; /* 90% Opacity */
-  --secondary-bg-color-opacity-80: #2C3034; /* 80% Opacity */
+  /* Dark Mode Colors */
+  --bg-dk-md: hsl(210, 10%, 0%);
+  --bg-base-dk-md: hsl(210, 10%, 5%);
+  --bg-light-dk-md: hsl(210, 10%, 10%);
+  /* Dark Mode Font Colors */
+  --base-text-dk-md: hsl(210, 17%, 95%);
+  --text-muted-dk-md: hsl(210, 17%, 70%);
+  /* Dark Mode Opacity Colors */
+
+  /* light Mode Colors */
+  --bg-light-md: hsl(0, 0%, 100%);
+  --bg-base-light-md: hsl(210, 10%, 95%);
+  --bg-light-light-md: hsl(210, 10%, 90%);
+  /* Dark Mode Font Colors */
+  --base-text-light-md: hsl(0, 0%, 5%);
+  --text-muted-light-md: hsl(0, 0%, 30%);
+  /* Dark Mode Opacity Colors */
+
   --primary-font-color: #F8F9FA;
 
   --primary-white-color: #F8F9FA;
@@ -22,7 +36,7 @@ html {
 }
 
 body {
-  background-color: var(--primary-bg-color);
+  background-color: var(--bg-dk-md);
   color: white;
 }
 
@@ -69,7 +83,7 @@ main {
     .main-img-container {
 
       img {
-        background-color: var(--secondary-bg-color-opacity-90);
+        background-color: var(--bg-base-dk-md);
         transform: translate(0, -120px);
         z-index: 1;
         border-radius: 1rem;
@@ -84,7 +98,7 @@ main {
         font-weight: 700;
         #h1-span {
           padding-bottom: 0.8rem;
-          border-bottom: #6C757D solid 3px;
+          border-bottom: var(--text-muted-light-md) solid 3px;
         }
       }
 
@@ -101,7 +115,7 @@ main {
         letter-spacing: 0.5rem;
         margin-top: 1.5rem;
         padding-bottom: 1rem;
-        border-bottom: #6C757D solid 3px;
+        border-bottom: var(--text-muted-light-md) solid 3px;
       }
     }
   }
@@ -170,7 +184,7 @@ main {
         
         a {
           padding-bottom: 1rem;
-          border-bottom: #6C757D solid 5px;
+          border-bottom: var(--text-muted-light-md) solid 5px;
           color: inherit;
           text-decoration: none;
         }
@@ -191,7 +205,7 @@ footer {
   row-gap: 2.4rem;
   padding: 4rem 1rem 2rem 1rem;
 
-  background-color: var(--secondary-bg-color);
+  background-color: var(--bg-base-dk-md);
 
   .contact-info {
     text-align: center;
@@ -211,29 +225,29 @@ footer {
   .contact-form {
     width: 380px;
     padding: 1rem;
-    color: var(--primary-white-color);
+    color: var(--base-text-dk-md);
 
     form {
       display: grid;
       grid-template-columns: 1fr;
-      color: var(--primary-white-color);
+      color: var(--base-text-dk-md);
       
       .form-group {
-        border-bottom: var(--primary-white-color) solid 2px;
+        border-bottom: var(--bg-light-dk-md) solid 2px;
         margin: 1.5rem 0;
         padding: 0 0 1.5rem 0;
         
         input[type=text] {
           margin-left: 1rem;
           padding: 0.5rem 0.3rem;
-          background-color: var(--secondary-bg-color);
+          background-color: var(--bg-base-dk-md);
           border: none;
           border-radius: 5px;
           color: inherit;
         }
 
         input[type=text]:hover, textarea:hover, input[type=text]:focus, textarea:focus {
-          background-color: var(--secondary-bg-color-opacity-80);
+          background-color: var(--bg-light-dk-md);
         }
 
         input[type=text]:focus {
@@ -246,8 +260,8 @@ footer {
           border-radius: 5px;
           padding: 0.5rem 1rem;
           border: none;
-          background-color: var(--secondary-bg-color);
-          color: var(--primary-white-color);
+          background-color: var(--bg-base-dk-md);
+          color: var(--base-text-dk-md);
           resize: none;
           outline: none;
         }
@@ -294,7 +308,7 @@ footer {
         button {
           padding-bottom: 1rem;
           letter-spacing: 2px;
-          background-color: var(--secondary-bg-color);
+          background-color: var(--bg-base-dk-md);
           border: none;
           border-bottom: solid mediumaquamarine 3px;
           color: var(--primary-font-color);
@@ -310,7 +324,7 @@ footer {
   } 
 
  .footer-info {
-  border-top: var(--primary-white-color) solid 2px;
+  border-top: var(--bg-light-dk-md) solid 3px;
   padding-top: 1rem;
   width: 100%;
 
