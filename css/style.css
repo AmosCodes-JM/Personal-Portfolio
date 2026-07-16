@@ -15,9 +15,9 @@
   /* Dark Mode Opacity Colors */
 
   /* light Mode Colors */
-  --bg-light-md: hsl(0, 0%, 100%);
+  --bg-dark-light-md: hsl(0, 0%, 90%);
   --bg-base-light-md: hsl(210, 10%, 95%);
-  --bg-light-light-md: hsl(210, 10%, 90%);
+  --bg-light-light-md: hsl(210, 10%, 100%);
   /* Dark Mode Font Colors */
   --base-text-light-md: hsl(0, 0%, 5%);
   --text-muted-light-md: hsl(0, 0%, 30%);
