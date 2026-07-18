@@ -24,7 +24,26 @@
             grid-template-columns: 1fr 1fr;
             grid-template-rows: min-content;
             margin-bottom: 13rem;
-            border-bottom: var(--primary-white-color) solid 2px;
+            border-bottom: var(--bg-light-dk-md) solid 5px;
+
+            div {
+                text-align: left;
+                h1 {
+                    font-size: 4.5rem;
+                    #h1-span {
+                        padding-bottom: 0.3rem;
+                    }
+                }
+
+                p {
+                    font-size: 1.8rem;
+                }
+
+                h4 {
+                    font-size: 1.7rem;
+                    padding-bottom: 0.8rem;
+                }
+            }
 
             .main-img-container {
                 justify-self: end;
@@ -51,6 +70,17 @@
             display: grid;
             grid-template-columns: 400px 400px;
             justify-content: center;
+
+            .project-header {
+                font-size: 4.5rem;
+                padding-bottom: 0.4;
+                border-bottom: var(--text-muted-light-md) soild 3px;
+            }
+
+            .project-contact {
+                font-size: 1.7rem;
+                text-align: right;
+            }
         }
     }
 
