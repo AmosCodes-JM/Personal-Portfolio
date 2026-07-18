@@ -1,3 +1,28 @@
+:root {
+  /* Dark Mode Colors */
+  --bg-dk-md: hsl(210, 10%, 0%);
+  --bg-base-dk-md: hsl(210, 10%, 5%);
+  --bg-light-dk-md: hsl(210, 10%, 10%);
+  /* Dark Mode Font Colors */
+  --base-text-dk-md: hsl(210, 17%, 95%);
+  --text-muted-dk-md: hsl(210, 17%, 70%);
+  /* Dark Mode Opacity Colors */
+
+  /* light Mode Colors */
+  --bg-dark-light-md: hsl(0, 0%, 90%);
+  --bg-base-light-md: hsl(210, 10%, 95%);
+  --bg-light-light-md: hsl(210, 10%, 100%);
+  /* Dark Mode Font Colors */
+  --base-text-light-md: hsl(0, 0%, 5%);
+  --text-muted-light-md: hsl(0, 0%, 30%);
+  /* Dark Mode Opacity Colors */
+
+  --primary-font-color: #F8F9FA;
+
+  --primary-white-color: #F8F9FA;
+  --secondary-white-color: #E9ECEF;
+}
+
 /* Tablet Layout */
 
 @media screen and (min-width: 700px) {
