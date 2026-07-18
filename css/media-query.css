@@ -93,19 +93,43 @@
         
         .project-section {
             display: grid;
-            grid-template-columns: 400px 400px;
+            grid-template-columns: max-content max-content;
+            column-gap: 1.5rem;
             justify-content: center;
 
-            .project-header {
-                font-size: 4.5rem;
-                padding-bottom: 0.4;
-                border-bottom: var(--text-muted-light-md) soild 3px;
+            .project {
+                justify-self: start;
+                align-self: flex-start;
             }
 
-            .project-contact {
-                font-size: 1.7rem;
-                text-align: right;
+            .project-header {
+                margin: 0;
+                font-size: 4.5rem;
             }
+            
+            .project-contact {
+                width: max-content;
+                justify-self: end;
+                text-align: right;
+                font-size: 1.7rem;
+                padding-bottom: 1rem;
+                border-bottom: var(--text-muted-light-md) 4px solid;
+            }
+
+            .project-info {
+                width: 98%;
+                justify-content: start;
+                font-size: 1.5rem;
+
+
+                h2 {
+                    margin: 0;
+                }
+
+                
+            }
+
+
         }
     }
 
