@@ -179,15 +179,24 @@
         flex-direction: column;
         align-items: center;
 
-        .project-tools, project-links {
+        /* .project-tools, project-links {
 
-        }
+        } */
     }
 
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 5rem 10rem;
+
+        .contact-info {
+            align-self: start;
+            justify-self: center;
+
+            h2 {
+                margin: 3rem 0 ;
+            }
+        }
 
         .footer-info {
             grid-column: 1 / 3;
